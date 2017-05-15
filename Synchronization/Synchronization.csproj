@@ -22,7 +22,7 @@ All synchronization objects can be found in the NeoSmart.Synchronization namespa
     <PackageLicenseUrl>https://cdn.rawgit.com/neosmart/synchronization.net/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' != 'net20'">
     <PackageReference Include="System.Diagnostics.Contracts" Version="4.3.0" />
   </ItemGroup>
 
