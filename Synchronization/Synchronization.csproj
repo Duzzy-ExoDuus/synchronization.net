@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard1.3;net20;net40</TargetFrameworks>
     <AssemblyName>NeoSmart.Synchronization</AssemblyName>
     <RootNamespace>NeoSmart.Synchronization</RootNamespace>
-    <Version>0.1</Version>
+    <Version>0.1.1</Version>
     <Company>NeoSmart Technologies</Company>
     <Description>A collection of useful synchronization objects and primitives for .NET 2.0+ and .NET Core. Includes a countdown event and a scoped mutex for use instead of a named lock. 
 
