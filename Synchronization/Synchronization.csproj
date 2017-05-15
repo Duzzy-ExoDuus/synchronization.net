@@ -1,7 +1,29 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFrameworks>netstandard1.3;net20;net40</TargetFrameworks>
+    <AssemblyName>NeoSmart.Synchronization</AssemblyName>
+    <RootNamespace>NeoSmart.Synchronization</RootNamespace>
+    <Version>0.1</Version>
+    <Company>NeoSmart Technologies</Company>
+    <Description>A collection of useful synchronization objects and primitives for .NET 2.0+ and .NET Core. Includes a countdown event and a scoped mutex for use instead of a named lock. 
+
+All synchronization objects can be found in the NeoSmart.Synchronization namespace.</Description>
+    <Copyright>Copyright NeoSmart Technologies 2017</Copyright>
+    <PackageProjectUrl>https://github.com/neosmart/synchronization.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/neosmart/synchronization.net</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>synchronization, scoped mutex, scopedmutex, countdown event, countdownevent, neosmart, synchronization.net</PackageTags>
+    <PackageReleaseNotes>Initial release on NuGet</PackageReleaseNotes>
+    <Authors>NeoSmart Technologies, Mahmoud Al-Qudsi</Authors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Synchronization.NET</PackageId>
+    <Product>NeoSmart.Synchronization</Product>
+    <PackageLicenseUrl>https://cdn.rawgit.com/neosmart/synchronization.net/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.Contracts" Version="4.3.0" />
+  </ItemGroup>
 
 </Project>
