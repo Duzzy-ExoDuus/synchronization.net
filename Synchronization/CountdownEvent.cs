@@ -12,8 +12,10 @@ namespace NeoSmart.Synchronization
     public class CountdownEvent : EventWaitHandle
     {
         private int _counter;
+        public delegate void EventTriggeredDelegate();
+        private EventTriggeredDelegate _callback;
 
-        public CountdownEvent(int start)
+        public CountdownEvent(int start, EventTriggeredDelegate callback = null)
             : base(false, EventResetMode.ManualReset)
         {
             if (start <= 0)
@@ -23,6 +25,7 @@ namespace NeoSmart.Synchronization
 #if !NET20
             Contract.EndContractBlock();
 #endif
+            _callback = callback;
             Reset(start);
         }
 
@@ -32,6 +35,7 @@ namespace NeoSmart.Synchronization
             if (result == 0)
             {
                 Set();
+                _callback?.Invoke();
             }
             else if (result < 0)
             {
