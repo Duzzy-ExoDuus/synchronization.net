@@ -18,7 +18,7 @@ All synchronization objects can be found in the NeoSmart.Synchronization namespa
     <Authors>NeoSmart Technologies, Mahmoud Al-Qudsi</Authors>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>Synchronization.NET</PackageId>
-    <Product>NeoSmart.Synchronization</Product>
+    <Product>Synchronization.NET</Product>
     <PackageLicenseUrl>https://cdn.rawgit.com/neosmart/synchronization.net/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
